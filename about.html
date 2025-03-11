@@ -29,6 +29,20 @@
 
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+        .nav-tabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    /* Inactive tab text color */
+    .nav-tabs .nav-link {
+      color: black;
+    }
+    /* Active tab text color */
+    .nav-tabs .nav-link.active {
+      color: orange !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -140,7 +154,7 @@
                 <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#assoc-overview" type="button" role="tab" aria-controls="assoc-overview" aria-selected="true">Overview</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="best-practices-tab" data-bs-toggle="tab" data-bs-target="#assoc-best-practices" type="button" role="tab" aria-controls="assoc-best-practices" aria-selected="false">List of Resident Best Practices</button>
+                <button class="nav-link" id="best-practices-tab" data-bs-toggle="tab" data-bs-target="#assoc-best-practices" type="button" role="tab" aria-controls="assoc-best-practices" aria-selected="false">Resident Best Practices</button>
               </li>
             </ul>
             <div class="tab-content" id="associationTabContent">
